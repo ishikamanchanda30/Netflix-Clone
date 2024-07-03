@@ -4,6 +4,7 @@
     padding: 0;
     margin: 0;
     font-family: 'Poppins';
+    scroll-behavior: smooth;
 }
 
 body {
@@ -15,12 +16,12 @@ body {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: max(900px, 100vw);
-    height: 80vh;
+    height: 100vh;
     position: relative;
 }
 
 .main .box {
-    height: 80vh;
+    height: 100vh;
     width: 100%;
     opacity: 0.64;
     background-color: black;
@@ -39,7 +40,7 @@ nav {
 }
 
 nav img {
-    width: 151px;
+    width: 160px;
     position: relative;
     z-index: 1;
     padding-top:30px;
@@ -90,12 +91,13 @@ nav button {
 }
 
 .btn {
-    padding: 3px 6px;
+    padding: 8px 16px;
     font-weight: bold;
     background-color: white;
     font-family: "Poppins";
     border-radius: 4px;
     border: 0px;
+    font-size: 15px;
 }
 
 .btn-red {
@@ -120,7 +122,7 @@ nav button {
     color: white;
 }
 
-.main input {
+.main input, div input {
     background-color: rgba(54, 54, 54, 0.7);
     padding: 20px 50px;
     font-size: 12px;
@@ -165,9 +167,9 @@ nav button {
 
 .secImg video {
     position: absolute;
-    top: 61px;
-    right: 45px;
-    height: 200px;
+    top: 85px;
+    right: 70px;
+    height: 232px;
 }
 
 .first>div :first-child {
@@ -225,6 +227,7 @@ footer {
     display:grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     color: white;   
+
 }
 
 .footer a{
@@ -237,6 +240,19 @@ footer {
     display: flex;
     flex-direction:column;
     font-size: 15px;
-    gap:23px;
+    gap:3px;
+    justify-content: center;
 
+}
+
+.newsletter{
+    max-width: 80vw ;
+    margin: auto;
+    color: white;
+    font-size: 18px;
+    justify-content: center;
+    text-align: center;
+}
+.newbox{
+    padding: 25px;
 }
